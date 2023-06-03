@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    overflow: hidden; 
+    background-color: #09c;
+}
+
+.child{
+    background-color: white;
+    width: 23.7%;
+    position: relative;
+    overflow: hidden; 
+    float: left;
+    padding: 8px;
+}
+
+img{
+    width: 100%;
+    transition: transform 1s 1s;
+}
+
+.caption{
+    position: absolute;
+    background-color:#09c;
+    opacity: 0.6;
+    text-align: center;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s , opacity  1s;
+    opacity: 0;
+}
+
+h2{
+    background: burlywood;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    left: 103%;
+    transition:left 1s  2s;
+}
+
+p{
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+    position: relative;
+    left: 103%;
+    transition:left 1s  2.5s;
+
+
+}
+
+.child:hover .caption{
+    transform: rotate(360deg );
+    opacity: 0.5;
+}
+
+.child:hover img{
+  transform: scale(1.2);  
+}
+
+.child:hover h2{
+    left: 0; 
+  }
+
+  .child:hover p{
+    left: 0; 
+  }
+
+
+
+
